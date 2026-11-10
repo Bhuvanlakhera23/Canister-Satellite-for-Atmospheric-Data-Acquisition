@@ -1,15 +1,53 @@
-# CanSat – A Picosatellite for Atmospheric Data Acquisition  
+# CanSat — Atmospheric Data Acquisition
 
-![Language](https://img.shields.io/badge/Language-C/C++-blue.svg)  
-![Domain](https://img.shields.io/badge/Domain-Embedded%20Systems-green.svg)  
-![Communication](https://img.shields.io/badge/Wireless-Zigbee-orange.svg)  
-![Tools](https://img.shields.io/badge/Tools-Eagle%20CAD-lightgrey.svg)  
+My team and I built a CanSat prototype to integrate atmospheric sensing,
+onboard electronics and wireless telemetry in a compact payload. The project
+record describes a 700-gram assembly. This repository currently preserves the
+project description and prototype photographs; it does not contain firmware,
+schematics or a reproducible flight-test dataset.
 
-My team and I designed and developed a **700-gram CanSat** that simulates satellite functionality. It was built to collect valuable data during flight using multiple onboard sensors, launched via rocket or drone, and successfully recovered after descent. This project provided **hands-on experience in electronics engineering, embedded systems, and system integration**.  
+## System architecture
 
----
+```text
+IMU / environmental sensors → microcontroller → Zigbee radio → ground station
+                                  ↑
+                         battery / power subsystem
+```
 
-## 📸 Project Highlights
+This is a conceptual summary of the documented design, not an as-built wiring
+diagram. Exact part numbers, sampling rates and power ratings remain unrecorded here.
+
+## Hardware and sensing
+
+The documented subsystems are a microcontroller, Zigbee communication modules,
+IMU/gyroscope and environmental sensors, battery management and the mechanical
+payload assembly. Eagle CAD and C/C++ are listed in the original project account;
+the corresponding CAD and firmware files have not been recovered for this repository.
+
+## Communications and embedded software
+
+The intended data path acquired orientation and environmental readings onboard
+and transmitted telemetry to a ground station. No packet specification, ground-
+station code, sample telemetry or range-test log is retained here. I do not claim
+a verified 1 km link, autonomous power performance or a measured data-loss rate.
+
+## My contributions and the team's work
+
+My recorded contributions were hardware/software integration, the Zigbee link,
+sensor acquisition programming and assistance with the power subsystem. The team
+collectively built and integrated the payload. This summary follows the original
+project account; individual commits, schematics and subsystem test records are
+not available to independently apportion every task.
+
+## Testing and measured results
+
+The original account reports deployment, descent and recovery. The photographs
+are qualitative project evidence, not calibrated flight or reliability records.
+No telemetry trace, altitude history, environmental calibration, measured power
+budget or launch/recovery test report is committed. Accordingly, launch survival,
+range and sensing accuracy are not established as measured results here.
+
+## Prototype photographs
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b51c912b-054a-4a3d-8e1e-58402c0ffcac" 
@@ -32,26 +70,20 @@ My team and I designed and developed a **700-gram CanSat** that simulates satell
   </tr>
 </table>
 
----
 
-## What this CanSat can do  
-- **Transmit real-time telemetry** (altitude, temperature, pressure, orientation) from 1 km altitude to the Ground Control Station  
-- **Collect and log sensor data** from IMU, gyroscopes, and environmental modules for post-flight analysis  
-- **Autonomously manage power** with an onboard Battery Management System (BMS) to ensure stable operation  
-- **Demonstrate satellite subsystems** (communication, sensing, power, structure) in a scaled-down but realistic model  
-- **Survive launch and descent conditions**, showcasing complete integration of electronics, mechanics, and embedded software  
+The images retain their existing GitHub attachment URLs and captions. Their
+availability and team-media redistribution scope should be confirmed before
+reuse elsewhere; no new image or flight evidence was created for this revision.
 
----
+## Missing evidence and acknowledgments
 
-## My Role & Contributions  
-- **Hardware–Software Integration** → Bridged electronics with embedded software for reliable subsystem communication  
-- **Wireless Telemetry** → Developed the **Zigbee-based communication link** between the satellite and Ground Control Station  
-- **Sensor Integration** → Programmed the microcontroller to acquire and process data from **IMU, gyroscopes, and environmental sensors**  
-- **Power Subsystem** → Assisted in Battery Management System (BMS) design and ensured power stability during flight  
+- Recover the as-built bill of materials, wiring and Eagle CAD with team permission.
+- Recover authentic firmware, ground-station source and communication framing.
+- Add calibration/range/power tests and timestamped telemetry if retained.
+- Separate measured launch/descent/recovery outcomes from intended capabilities.
+- Credit the team and establish rights for every additional file.
 
----
-
-## Tech Stack  
-- **Languages & Firmware**: C, C++ (embedded programming)  
-- **Hardware & Tools**: Microcontrollers, Zigbee modules, IMU/Gyroscopes, Environmental Sensors, Eagle CAD  
-- **Domains**: Embedded Systems, Wireless Communication, Power Management, System Integration  
+This was a team hardware project. It remains public as an engineering record;
+stronger technical evidence is needed before featuring it as a measured-performance
+project. The existing license is unchanged and does not establish rights to
+additional team material.
