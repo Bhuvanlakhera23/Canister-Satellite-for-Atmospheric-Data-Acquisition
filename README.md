@@ -9,20 +9,22 @@ source and deliver useful readings to a ground station while the mission progres
 
 ## My role
 
-I worked on the **electronics and communication subsystems**: sensor and
-microcontroller integration, onboard data acquisition, the Zigbee telemetry link
-and the ground-station data path. The structure, parachutes and recovery mechanisms
-were developed within the wider team. I also served as Mission Control Officer in
-the team's mission plan and coauthored the later project report.
+The team's mission plan listed me as Mission Control Officer. My primary
+engineering work was in **sensor integration, embedded data acquisition and wireless
+telemetry**, including the Zigbee link and ground-station data path. The CDR
+identified me as Housekeeping Subsystem Officer. I coauthored the later project
+report; the structure, parachutes and recovery mechanisms were wider team efforts.
 
 ## How the system fits together
 
 ![Functional overview of the electronics and communication configuration described in the 2024 team report](media/system-architecture.svg)
 
 The later report describes two Arduino Nano controllers: one for sensor acquisition
-and telemetry, and a second for the reaction-wheel electronics. Separating these
-functions kept the data-handling and attitude-control roles distinct. The payload
-combined local SD-card recording with a radio link to the ground station.
+and telemetry, and a second for the reaction-wheel electronics. That account
+assigns distinct data-handling and attitude-control roles and describes local
+SD-card recording alongside the ground-station radio link.
+Both diagrams summarize the later report's functional description; they are not
+independent confirmation of every connection on the final assembled hardware.
 
 | Subsystem | Components documented in the 2024 report | Role |
 |---|---|---|
@@ -39,7 +41,7 @@ from the later prototype report.
 
 ## From a sensor reading to the ground station
 
-![Sensor acquisition, telemetry formatting, local recording, radio reception and ground-station display](media/telemetry-data-flow.svg)
+![Telemetry data flow described in the 2024 team report](media/telemetry-data-flow.svg)
 
 The data-handling design grouped sensor values with a timestamp, packet count and
 mission state. The radio carried those fields to the ground station, where an
