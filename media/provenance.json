@@ -1,0 +1,116 @@
+{
+  "schema": "cansat-selected-public-media-v2",
+  "date": "2026-11-10",
+  "attribution": "NAMBI team design work; 2024 report by Mohit, Himanshu, Yashika Yadav and Bhuvan Lakhera",
+  "assets": [
+    {
+      "file": "media/assembled-prototype.jpg",
+      "source_id": "team-report-2024",
+      "pdf_page": 62,
+      "figure": 30,
+      "source_sha256": "b70fff8b0660321bef1ce67d91739712ab5a1c20ec9810baeba32820dbb1ccfa",
+      "sha256": "10285da221b4b2ab60667f808dc6dbf4b2d5f2519bdcb8e3ca9edad87f347d43",
+      "bytes": 134578,
+      "width": 1000,
+      "height": 558,
+      "medium": "Photographs",
+      "caption": "Assembled prototype and internal electronics",
+      "status": "READY",
+      "publication_basis": "Specific permission confirmed by Bhuvan Lakhera for these team-report figures on 2026-11-10; team attribution retained; no new blanket license."
+    },
+    {
+      "file": "media/drop-test-prototypes.jpg",
+      "source_id": "team-report-2024",
+      "pdf_page": 61,
+      "figure": 28,
+      "source_sha256": "b70fff8b0660321bef1ce67d91739712ab5a1c20ec9810baeba32820dbb1ccfa",
+      "sha256": "27c7a5d47fe534a32c7fa5cf011f013fa33ff6dec688e0b9dd39a7d82ae488f1",
+      "bytes": 203845,
+      "width": 1200,
+      "height": 635,
+      "medium": "Photographs",
+      "caption": "Parachute prototype tests with dummy payloads",
+      "status": "READY",
+      "publication_basis": "Specific permission confirmed by Bhuvan Lakhera for these team-report figures on 2026-11-10; team attribution retained; no new blanket license."
+    },
+    {
+      "file": "media/radio-test-capture.png",
+      "source_id": "team-report-2024",
+      "pdf_page": 59,
+      "figure": 23,
+      "source_sha256": "b70fff8b0660321bef1ce67d91739712ab5a1c20ec9810baeba32820dbb1ccfa",
+      "sha256": "71000c8e498cedc33b862308a5fefe1410cbce78ef8769054573ed4bf026d75f",
+      "bytes": 246399,
+      "width": 1200,
+      "height": 366,
+      "medium": "Screenshot",
+      "caption": "XCTU plot and packet counters; radio hardware addresses excluded",
+      "status": "READY",
+      "publication_basis": "Specific permission confirmed by Bhuvan Lakhera for these team-report figures on 2026-11-10; team attribution retained; no new blanket license."
+    },
+    {
+      "file": "media/temperature-acquisition.png",
+      "source_id": "team-report-2024",
+      "pdf_page": 60,
+      "figure": 25,
+      "source_sha256": "b70fff8b0660321bef1ce67d91739712ab5a1c20ec9810baeba32820dbb1ccfa",
+      "sha256": "1ee34ef587fe24456b415cff9f7e7e9d5610b39ca7fc52fa5b4aaaa036d9e959",
+      "bytes": 174602,
+      "width": 1200,
+      "height": 521,
+      "medium": "Screenshot",
+      "caption": "Temperature acquisition and averaging examples in separate capture windows",
+      "status": "READY",
+      "publication_basis": "Specific permission confirmed by Bhuvan Lakhera for these team-report figures on 2026-11-10; team attribution retained; no new blanket license."
+    },
+    {
+      "file": "media/ground-station-prototype.png",
+      "source_id": "team-report-2024",
+      "pdf_page": 62,
+      "figure": 29,
+      "source_sha256": "b70fff8b0660321bef1ce67d91739712ab5a1c20ec9810baeba32820dbb1ccfa",
+      "sha256": "592af6f851f2c0d0875c44bad55845494f6e5e19565dccff1d23a7226ce9a1d1",
+      "bytes": 351218,
+      "width": 1200,
+      "height": 591,
+      "medium": "Screenshot",
+      "caption": "Ground-control interface prototype with sample fields and CSV control",
+      "status": "READY",
+      "publication_basis": "Specific permission confirmed by Bhuvan Lakhera for these team-report figures on 2026-11-10; team attribution retained; no new blanket license."
+    },
+    {
+      "file": "media/system-architecture.svg",
+      "source_id": "team-report-2024",
+      "pdf_pages": [
+        46,
+        47,
+        48,
+        49,
+        54,
+        55
+      ],
+      "sha256": "573c7514bb309f6b3dba6e0b6743637320375326c78eaf5d6a646bbeb2dffb12",
+      "bytes": 5048,
+      "medium": "New factual diagram",
+      "status": "READY",
+      "publication_basis": "Original functional summary authorized for this revision; no source CAD copied."
+    },
+    {
+      "file": "media/telemetry-data-flow.svg",
+      "source_id": "team-report-2024",
+      "pdf_pages": [
+        46,
+        47,
+        48,
+        49,
+        54,
+        55
+      ],
+      "sha256": "bc72ec9f03b8d7c4e45df2b4013cf0f91796fded0622111a82d4d7150855c650",
+      "bytes": 3575,
+      "medium": "New factual diagram",
+      "status": "READY",
+      "publication_basis": "Original functional summary authorized for this revision; no source CAD copied."
+    }
+  ]
+}
